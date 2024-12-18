@@ -66,7 +66,7 @@ def udp_scan():
                 print("port :",port,"state:",scanner[host][proto][port]['state'])
     
 def version_scan():
-    print(Fore.BLACK,Back.WHITE+f.renderText("VERSION SCAN"))
+    print(Fore.WHITE+f.renderText("VERSION SCAN"))
     targ=input('ENTER YOUR TARGET:')
     scanner.scan(targ,arguments='-sV -p 1-1023')
     print("scaninfo:",scanner.scaninfo())

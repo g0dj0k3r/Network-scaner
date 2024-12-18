@@ -1,5 +1,7 @@
 import nmap
 import osdiscovery
+import getip
+import pingscan
 from pyfiglet import *
 from colorama import *
 
@@ -49,6 +51,7 @@ def syn_scan():
             
             for port in lport:
                 print("port :",port,"state:",scanner[host][proto][port]['state'])
+
 def udp_scan():
     print(Fore.YELLOW+f.renderText("UDP SCAN"))
     targ=input('ENTER YOUR TARGET:')
@@ -66,6 +69,7 @@ def udp_scan():
             for port in lport:
                 print("port :",port,"state:",scanner[host][proto][port]['state'])
     
+
 def version_scan():
     print(Fore.WHITE+f.renderText("VERSION SCAN"))
     targ=input('ENTER YOUR TARGET:')
@@ -118,27 +122,33 @@ def agressive():
 def main():
    
     print(Fore.YELLOW+"""CHOOSE OPTION TO SCAN
-                 1.DISCOVER LIVE HOSTS
-                 2.SYN ACK SCAN
-                 3.UDP SCAN
-                 4.VERSION SCAN
-                 5.AGRESSIVE SCAN
-                 6.OS DISCOVERY""")
+                 1.GET WEBSITE IP
+                 2.DISCOVER LIVE HOSTS
+                 3.PING SCAN
+                 4.SYN ACK SCAN
+                 5.UDP SCAN
+                 6.VERSION SCAN
+                 7.AGRESSIVE SCAN
+                 8.OS DISCOVERY""")
     option=input("ENTER YOUR CHOICE:")
     print("you choosed:",option)
     print("<------------------------------------------------->")
         
     if option=='1':
-        live_hosts()
+        getip.get_ip()
     elif option=='2':
-        syn_scan()
+        live_hosts()
     elif option=='3':
-        udp_scan()
+        pingscan.ping_scan()
     elif option=='4':
-        version_scan()
+        syn_scan()
     elif option=='5':
-        agressive()
+        udp_scan()
     elif option=='6':
+        version_scan()
+    elif option=='7':
+        agressive()
+    elif option=='8':
         osdiscovery.os_discovery()
     else:
         print("you entered invalid option")

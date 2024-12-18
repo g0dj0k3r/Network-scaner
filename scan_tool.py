@@ -1,4 +1,5 @@
 import nmap
+import osdiscovery
 from pyfiglet import *
 from colorama import *
 
@@ -118,10 +119,11 @@ def main():
    
     print(Fore.YELLOW+"""CHOOSE OPTION TO SCAN
                  1.DISCOVER LIVE HOSTS
-                 2.SYN SCAN
+                 2.SYN ACK SCAN
                  3.UDP SCAN
                  4.VERSION SCAN
-                 5.AGRESSIVE SCAN""")
+                 5.AGRESSIVE SCAN
+                 6.OS DISCOVERY""")
     option=input("ENTER YOUR CHOICE:")
     print("you choosed:",option)
     print("<------------------------------------------------->")
@@ -136,6 +138,8 @@ def main():
         version_scan()
     elif option=='5':
         agressive()
+    elif option=='6':
+        osdiscovery.os_discovery()
     else:
         print("you entered invalid option")
           

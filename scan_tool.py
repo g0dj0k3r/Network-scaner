@@ -162,7 +162,7 @@ def scanning():
         print("<-------------------------------------->")
         ch=input("PERFORM SCAN[y/n]:")
         print("<-------------------------------------->")
-        if ch=='y' or 'Y':
+        if ch=='y'or'Y':
             main()
         elif ch=='n'or'N':
             print("bye")

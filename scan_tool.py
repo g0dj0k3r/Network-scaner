@@ -160,11 +160,11 @@ def scanning():
     
     while True:
         print("<-------------------------------------->")
-        ch=input("DO WANT TO PERFORM SCAN[y/n]:")
+        ch=input("PERFORM SCAN[y/n]:")
         print("<-------------------------------------->")
-        if ch=='y':
+        if ch=='y' or 'Y':
             main()
-        elif ch=='n':
+        elif ch=='n'or'N':
             print("bye")
             break
             exit()

@@ -122,14 +122,14 @@ def agressive():
 def main():
    
     print(Fore.YELLOW+"""CHOOSE OPTION TO SCAN
-                 1.GET WEBSITE IP
-                 2.DISCOVER LIVE HOSTS
-                 3.PING SCAN
-                 4.SYN ACK SCAN
-                 5.UDP SCAN
-                 6.VERSION SCAN
-                 7.AGRESSIVE SCAN
-                 8.OS DISCOVERY""")
+                 [1].GET WEBSITE IP
+                 [2].DISCOVER LIVE HOSTS
+                 [3].PING SCAN
+                 [4].SYN ACK SCAN
+                 [5].UDP SCAN
+                 [6].VERSION SCAN
+                 [7].AGRESSIVE SCAN
+                 [8].OS DISCOVERY""")
     option=input("ENTER YOUR CHOICE:")
     print("you choosed:",option)
     print("<------------------------------------------------->")

@@ -13,22 +13,22 @@ def main():
 
     print(Fore.MAGENTA+"\t  \t\t\t\tCREATED BY:GODJOKER\n\n")
 
-    print(Fore.WHITE+"well known ports (0-1023)")
+    print(Fore.LIGHTBLUE_EX+"well known ports (0-1023)")
     print("registered ports (1024-49151)")
     print("dynamic ports (49152-65535).")
-    print("NMAP VERSION:",scanner.nmap_version())
+    print("NMAP VERSION:",scanner.nmap_version(),Style.RESET_ALL)
     
     while True:
-        print(Fore.YELLOW+"""CHOOSE OPTION TO SCAN
-                 [1] GET WEBSITE IP
-                 [2] DISCOVER LIVE HOSTS
-                 [3] PING SCAN
-                 [4] SYN ACK SCAN
-                 [5] UDP SCAN
-                 [6] VERSION SCAN
-                 [7] AGRESSIVE SCAN
-                 [8] OS DISCOVERY
-                 [9] EXIT""")
+        print(Fore.YELLOW+"""\n\n\nCHOOSE OPTION TO SCAN\n
+                 [1] GET WEBSITE IP\n
+                 [2] DISCOVER LIVE HOSTS\n
+                 [3] PING SCAN\n
+                 [4] SYN ACK SCAN\n
+                 [5] UDP SCAN\n
+                 [6] VERSION SCAN\n
+                 [7] AGRESSIVE SCAN\n
+                 [8] OS DISCOVERY\n
+                 [9] EXIT\n\n\n""")
         option=input("ENTER YOUR CHOICE:")
         print("you choosed:",option)
         print("<------------------------------------------------->")

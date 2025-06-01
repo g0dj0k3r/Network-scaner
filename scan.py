@@ -9,7 +9,7 @@ from colorama import *
 scanner=nmap.PortScanner()
 f=Figlet()
 def main():
-    print(Fore.RED+f.renderText("PYTHON NMAP SCANER\n"))
+    print(Fore.RED+f.renderText("NETWORK SCANER\n"))
 
     print(Fore.MAGENTA+"\t  \t\t\t\tCREATED BY:GODJOKER\n\n")
 

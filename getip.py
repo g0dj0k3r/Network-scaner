@@ -1,14 +1,14 @@
 import socket
-from pyfiglet import *
-from colorama import *
+from pyfiglet import Figlet
+from colorama import Fore, Style
 f=Figlet()
 def get_ip():
     
     
-    print(Fore.LIGHTRED_EX+f.renderText("GET URL IP"))
+    print(Fore.LIGHTMAGENTA_EX+f.renderText("GET URL IP"))
     
     target=input("ENTER TARGET URL TO GET IP:")
-    
+    print(Fore.RESET)
     if not target:
         print(Fore.RED+f"Please enter a valid URL"+Style.RESET_ALL)
         return

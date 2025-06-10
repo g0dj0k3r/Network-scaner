@@ -6,9 +6,10 @@ scanner=nmap.PortScanner()
 f=Figlet()
 def os_discovery():
     
-    print(Fore.GREEN+f.renderText("OS DISCOVERY"))
+    print(Fore.CYAN+f.renderText("OS DISCOVERY"))
     
     target=input("enter target :")
+    print(Fore.RESET)
     scanner.scan(target,arguments='-O')
 
     for host in scanner.all_hosts():
@@ -25,7 +26,7 @@ def os_discovery():
                     for osclass in osmatch['osclass']:
                         
                         
-                        print("ip :",host)
+                        print(Fore.GREEN+"ip :",host)
                         
                         print("os type :",osclass['type'])
                         
@@ -35,4 +36,5 @@ def os_discovery():
                         
                         print("VERSION :",osversion)
                         
-                        print("<---------------------------------------------------->")
+                        print("<---------------------------------------------------->"+Fore.RESET)
+                

@@ -15,7 +15,7 @@ Netwrok-scaner is a simple and efficient network scanning tool designed to help 
 Clone the repository:
 
 ```sudo
-git clone https://github.com/<your-username>/Netwrok-scaner.git
+git clone https://github.com/g0dj0k3r/Netwrok-scaner.git
 cd Netwrok-scaner
 python3 setup.py install
 net-scan

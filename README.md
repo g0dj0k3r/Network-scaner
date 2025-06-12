@@ -1,4 +1,4 @@
-# Netwrok-scaner
+# Network-scaner
 
 Netwrok-scaner is a simple and efficient network scanning tool designed to help users discover active devices, open ports, and services on a network. This tool is ideal for system administrators, network engineers, and cybersecurity professionals looking for quick network reconnaissance.
 

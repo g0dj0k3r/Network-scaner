@@ -4,13 +4,15 @@ Network-scaner is a simple and efficient network scanning tool designed to help 
 
 ## Features
 - Get Website ip 
-- Perform ping scan
+- Ping scaning 
+- Live host detection 
 - Scan local or remote networks for active hosts
 - Detect open ports and running services
 - Fast and lightweight
 - Easy to use command-line interface
-- Nmap Scripting engine added 
-
+- Os detection 
+- Nmap Scripting engine 
+- Vulnerability detection using Nmap scripting engine 
   
 
 ## Installation
